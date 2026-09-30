@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY FINE CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class = "container">
+    <div class = "header">
+        <div class = "icon">📚</div>
+        <h1>LIBRARY FINE CALCULATOR</h1>
+        <p>Calculate your book return fine easily</p>
+    </div>
+    <div class = "form">
+        <!-- Student Name-->
+         <label for="studentName">Student Name</label>
+         <input type="text" id="studentName" placeholder="Enter Student Name">
+         <!--Book Name-->
+         <label for="bookName">Book Name</label>
+         <input type="text" id="bookName" placeholder="Enter Book Name">
+         <!--Dates-->
+         <div class ="date-container">
+            <div>
+                <label for="dueDate">Due Date</label>
+                <input type="date" id="dueDate">
+            </div>
+            <div>
+              <label for="returnDate">Return Date</label>
+                <input type="date" id="returnDate">  
+            </div>
+         </div>
+         <!--Fine per day-->
+         <label for="fineRate">Fine Per Day (₹)</label>
+         <input type="number" id="fineRate" value="5" min="0">
+         <!--Calculate Button-->
+         <button onclick="calculateFine()">Calculate Fine</button>
+         <!--Reset Button-->
+         <button class="reset-btn" onclick="resetCalculator()">Reset</button>
+    </div>
+    <!--Result-->
+    <div id="result" class="result">
+        <h2>🗒️ Fine Details</h2>
+        <p>
+            Student:
+            <span id="resultStudent">-</span>
+        </p>
+        <p>
+            Book:
+            <span id="resultBook">-</span>
+        </p>
+        <p>
+            Days Late:
+            <span id="daysLate">0</span>
+        </p>
+        <div class="fine-box">
+            <p>Total Fine</p>
+            <h3 id="fineAmount">₹0</h3>
+        </div>
+        <p id="status" class="status">No Fine</p>
+    </div>
+    <footer>
+        Library Fine Calcultor Mini Project
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
