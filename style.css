@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: #eaf4ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container{
+    width: 100%;
+    max-width: 550px;
+    background: black;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+/*header*/
+.header{
+    background: #1976d2;
+    color: black;
+    text-align: center;
+    padding: 30px 20px;
+}
+.icon{
+    font-size: 45px;
+    margin-bottom: 8px;
+}
+.header h1{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.header p{
+    font-size: 14px;
+}
+/*form*/
+.form{
+    padding: 30px;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #333;
+}
+input{
+    width:100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 18px;
+    outline: none;
+}
+input:focus{
+    border-color: #1976d2;
+}
+/*Date*/
+.date-container{
+    display: flex;
+    gap:15px;
+}
+.date-container div{
+    width: 50%;
+}
+/*Buttons*/
+button{
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #1976d2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+button:hover{
+    background: #125ca5;
+}
+.reset-btn{
+    background: #777;
+    margin-top: 10px;
+}
+.reset-btn:hover{
+    background: #555;
+}
+/*Result*/
+.result{
+    margin: 0 30px 25px;
+    padding: 20px;
+    background: #f5f9ff;
+    border-radius: 12px;
+    border: 1px solid #d7e8fa;
+}
+.result h2{
+    text-align: center;
+    color: #1976d2;
+    margin-bottom: 20px;
+}
+.result p{
+    margin: 10px 0;
+    color: #444;
+}
+.result span{
+    float: right;
+    font-weight: bold;
+    color: #222;
+}
+/*Fine Box*/
+.fine-box{
+    text-align: center;
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.fine-box p{
+    margin: 0;
+    font-weight: bold;
+}
+.fine-box h3{
+    font-size: 30px;
+    color: #d68910;
+    margin-top: 5px;
+}
+/*status*/
+.status{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background: #d4edda;
+    color: #155724 !important;
+    border-radius: 8px;
+}
+/*footer*/
+footer{
+    text-align: center;
+    padding: 15px;
+    background: #f1f1f1;
+    color: #666;
+    font-size: 13px;
+}
+
